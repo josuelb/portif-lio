@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'home.html' %}
+{% load static %}
+<html lang="pt-br">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    
+    <link rel="stylesheet" href="{% static 'css/calc/cont/cont1.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/home/style.css' %}">    
+</head>
+{% endblock %}
+<body>
+    {% block h1 %}
+    <h1>Vamos contar</h1>
+    {% endblock %}
+
+    {% block conteudo %}
+    <section>
+        <div class="quest">
+            <p>
+                Início:
+                <input type="number" name="inicio" id="txtI">
+            </p>
+            <p>
+                Fim:
+                <input type="number" name="fim" id="txtF">
+            </p>
+            <p>
+                Passo:
+                <input type="number" name="passo" id="txtP">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o seu resultado!
+        </div>
+    </section>
+
+    <script src="{% static 'js/calc/cont/script.js' %}"></script>
+    {% endblock%}
+</body>
+</html>

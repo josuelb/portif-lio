@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/main1.css' %}">
+</head>
+{% endblock %}
+<body>
+    {% block header %}
+    <header>
+        {% block h1 %}
+        <h1>Josué Luiz B. Silva</h1>
+        {% endblock %}
+        <p>Bem vindo ao meu portifólio</p>
+        <nav>
+            <a href="/JLBarbosa/home/">Home</a>
+            <a href="@">Notícias</a>
+            <a href="@">Curiosidades</a>
+            <a href="@">Fale conosco</a>
+        </nav>
+        
+    </header>
+    {% endblock %}
+
+    {% block conteudo %}
+    <main>
+        <h1 class="titulo">Alguns projetos</h1><br>
+        <div class="container">
+            <div class="tech">
+                <a href="/JLBarbosa/tech/">
+                    <img src="{% static 'img/tecnologia-rh-tendencias.png' %}" alt="tecnologia" width="250px" class="tech_img"><br>
+                    <h3>Curiosidades sobre tecnologia</h3>
+                </a>
+            </div>
+            <div class="math">
+                <a href="/JLBarbosa/calc/">
+                    <img src="{% static 'img/matematica.png'%}" alt="matematica" class="math_img" height="120px" width="250px"><br>
+                    <h3>Calculos, números etc</h3>
+                </a>
+            </div>
+        </div>
+            
+    </main>
+    {% endblock %}
+    
+    {% block footer %}
+    <footer>
+        <p>Site criado por <a href="https://github.com/josuelb" target="_blank">Josué Luiz</a>
+    </footer>
+    {% endblock %}
+</body>
+</html>

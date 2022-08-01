@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+main{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    height: 100vh;
+    margin-top: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 15px 15px 15px;
+    padding-top: 10px;
+}
+
+.supercontador{
+    background-color: rgb(162, 255, 162);
+    border-radius: 10px;
+}
+.supercontador h3{
+    padding: 5px 10px 10px 10px;
+    text-align: center;
+}
+.supercontador a{
+    text-decoration: none;
+}
+.supercontador a img{
+    width: 200px;
+    padding: 10px;
+}
+.supercontador:hover{
+    box-shadow: 0px 0px 9px 3px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'home.html' %}
+{% load static %}
+<html lang="pt-br">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos, numeros etc</title>
+    <link rel="stylesheet" href="{% static 'css/home/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/calc/calc.css' %}">
+</head>
+{% endblock %}
+<body>
+    {% block conteudo%}
+    <main>
+        <article>
+            <div class="container">
+                <div class="supercontador">
+                    <a href="/JLBarbosa/calc/supercontador/">
+                        <img src="{% static 'img/contador.png' %}" alt="supercontador">
+                        <h3 style="color: black;">Super contador</h3>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+    {% endblock %}
+</body>
+</html>

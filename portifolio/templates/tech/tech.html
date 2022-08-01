@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'home.html'%}
+{% load static %}
+<html lang="pt-br">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech</title>
+    <link rel="stylesheet" href="{% static 'css/tech/tech.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/style.css' %}">
+</head>
+{% endblock %}
+<body>
+    {% block conteudo%}
+    <main>
+        <article>
+            <div class="container">
+                <div class="idroid">
+                    <a href="/JLBarbosa/tech/idroid/">
+                        <img src="{% static 'img/logoidroid.png' %}" alt="idroid" height="150px" class="idroid_img"><br>
+                        <h3>Idroid o começo de tudo</h3><br>
+                        <p>Historia do idroid</p>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+    {% endblock %}
+</body>
+</html>

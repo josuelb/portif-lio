@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    background-color: blue;
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    margin-top: 10px;
+}
+
+.quest{
+    background-color: var(--cor0);
+    display: inline-block;
+    box-shadow: 0px 0px 3px 1px;
+    margin-bottom: 10px;
+}
