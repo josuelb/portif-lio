@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="{% static 'css/home/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/home/main1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/main0.css' %}">
 </head>
 {% endblock %}
 <body>
@@ -31,22 +31,12 @@
     {% block conteudo %}
     <main>
         <h1 class="titulo">Alguns projetos</h1><br>
-        <div class="container">
-            <div class="tech">
-                <a href="/JLBarbosa/tech/">
-                    <img src="{% static 'img/tecnologia-rh-tendencias.png' %}" alt="tecnologia" width="250px" class="tech_img"><br>
-                    <h3>Curiosidades sobre tecnologia</h3>
-                </a>
-            </div>
-            <div class="math">
-                <a href="/JLBarbosa/calc/">
-                    <img src="{% static 'img/matematica.png'%}" alt="matematica" class="math_img" height="120px" width="250px"><br>
-                    <h3>Calculos, números etc</h3>
-                </a>
-            </div>
+        <div id="container" class="container">
+            
         </div>
             
     </main>
+    <script type="module" src="{% static 'js/home/conteud.js' %}"></script>
     {% endblock %}
     
     {% block footer %}

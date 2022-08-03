@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Comentarios
+from .models import Comentarios, Conteudos
 
 
 class ComentarioSerializer(serializers.ModelSerializer):
@@ -10,4 +10,17 @@ class ComentarioSerializer(serializers.ModelSerializer):
             'nome', 
             'email', 
             'comentario'
+        )
+
+
+class ConteudoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Conteudos
+        fields = (
+            'id',
+            'titulo',
+            'link',
+            'image',
+            'paragrafo',
+            'local'
         )

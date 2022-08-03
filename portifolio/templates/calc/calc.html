@@ -9,23 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculos, numeros etc</title>
     <link rel="stylesheet" href="{% static 'css/home/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/calc/calc.css' %}">
+    <link rel="stylesheet" href="{% static 'css/calc/calc1.css' %}">
 </head>
 {% endblock %}
 <body>
     {% block conteudo%}
     <main>
         <article>
-            <div class="container">
-                <div class="supercontador">
-                    <a href="/JLBarbosa/calc/supercontador/">
-                        <img src="{% static 'img/contador.png' %}" alt="supercontador">
-                        <h3 style="color: black;">Super contador</h3>
-                    </a>
-                </div>
+            <div id="container" class="container">
+                
             </div>
         </article>
     </main>
+    <script type="module" src="{% static 'js/calc/calc0.js' %}"></script>
     {% endblock %}
 </body>
 </html>

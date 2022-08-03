@@ -54,11 +54,12 @@
                 <input type="email" name="email" id="email" style="min-height: 20px;"><br>
                 <h4>Comentarios</h4>
                 <textarea name="coments" id="coments" cols="50" rows="10" maxlength="255"></textarea><br>
-                <button onclick="enviar()" style="min-height: 50px; min-width: 50px;">Enviar</button>
+                <button id="button" onclick="" style="min-height: 50px; min-width: 50px;">Enviar</button>
             </div>
         </aside>
 
-    <script src="{% static 'js/calc/cont/script1.js' %}"></script>
+    <script src="{% static 'js/calc/cont/cont.js' %}"></script>
+    <script class="enviar" type="module" src="{% static 'js/calc/cont/coments.js' %}"></script>
         </main>
     {% endblock%}
 </body>

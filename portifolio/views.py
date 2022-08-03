@@ -2,13 +2,20 @@ from django.views.generic import TemplateView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
-from .models import Comentarios
-from .serializers import ComentarioSerializer
+from .models import Comentarios, Conteudos
+from .serializers import ComentarioSerializer, ConteudoSerializer
 from .Automação_de_email import main
 
 """
-API dos Comentarios
+APIs
 """
+
+
+class ConteudoView(APIView):
+    def get(self, request):
+        conteud = Conteudos.objects.all()
+        serializer = ConteudoSerializer(conteud, many=True)
+        return Response(serializer.data)
 
 
 class ComentariosView(APIView):
